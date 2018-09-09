@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2018-09-09 16:55:52
 * @Last Modified by:   Administrator
-* @Last Modified time: 2018-09-09 21:43:13
+* @Last Modified time: 2018-09-09 22:26:05
 */
 
 // 路径
@@ -63,9 +63,9 @@ module.exports = {
 			{
 				test: /\.css$/,
 				use: ExtractTextPlugin.extract({
-		          fallback: "style-loader",
-		          use: "css-loader"
-		        })
+					fallback: "style-loader",
+					use: "css-loader"
+				})
 			},
 			{
 				test: /\.(png|jpg|gif|woff|svg|eot|ttf)$/,
