@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2018-09-09 16:55:52
 * @Last Modified by:   Administrator
-* @Last Modified time: 2018-09-09 22:26:05
+* @Last Modified time: 2018-09-09 22:35:25
 */
 
 // 路径
@@ -93,5 +93,18 @@ module.exports = {
 		new HtmlWebpackPlugin(getHtmlConfig('home')),
 		// 登录
 		new HtmlWebpackPlugin(getHtmlConfig('login'))
-	]
+	],
+	// 服务配置
+	devServer: {
+		// 本地服务器所加载的页面所在的目录
+		contentBase: './',
+		// 不跳转
+		historyApiFallback: true,
+		// 实时刷新
+		inline: true,
+		// 本机的局域网ip
+		host: '192.168.0.101',
+		// 是否运行成功后直接打开页面
+		open: true
+    }
 }
